@@ -44,11 +44,11 @@ public class DSUAccountAuthActivity extends AccountAuthenticatorActivity impleme
     public static final int INVALID_ACCESS_TOKEN = 4;
 
     /* Client used to interact with Google APIs. */
-    private GoogleApiClient mGoogleApiClient;
-    private boolean mIntentInProgress;
+    protected GoogleApiClient mGoogleApiClient;
+    protected boolean mIntentInProgress;
 
     final static String TAG = DSUAccountAuthActivity.class.getSimpleName();
-    ProgressDialog progress;
+    protected ProgressDialog progress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
